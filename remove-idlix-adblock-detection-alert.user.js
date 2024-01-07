@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Remove IDLIX's Adblock Detection Alert
-// @namespace    https://github.com/dibowz
+// @namespace    https://github.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/
 // @version      0.1
 // @description  Remove IDLIX's adblock detection elements and styles from a loaded HTML page
 // @author       Dibowz x ChatGPT
