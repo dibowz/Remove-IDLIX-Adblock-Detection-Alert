@@ -6,8 +6,8 @@
 // @author       Dibowz x ChatGPT
 // @match        *://*/*
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/dibowz/Remove-IDLIX-s-Adblock-Detection-Alert/main/remove-idlix-adblock-detection-alert.user.js
-// @updateURL    https://raw.githubusercontent.com/dibowz/Remove-IDLIX-s-Adblock-Detection-Alert/main/remove-idlix-adblock-detection-alert.user.js
+// @downloadURL  https://raw.githubusercontent.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/main/remove-idlix-adblock-detection-alert.user.js
+// @updateURL    https://raw.githubusercontent.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/main/remove-idlix-adblock-detection-alert.user.js
 // ==/UserScript==
 
 
