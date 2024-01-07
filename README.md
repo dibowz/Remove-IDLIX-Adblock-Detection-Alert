@@ -1,9 +1,9 @@
 # Remove IDLIX Adblock Detection Alert
 
-If you have adblock browser extension (ABP, AdGuard, uBlock Origin, etc.) or using adblock DNS (AdGuard, Tiarapp, etc.) and getting the annoying adblock detection overlay, you may have removed the overlay by adding it to the blocklist.
+If you have adblock browser extension (ABP, AdGuard, uBlock Origin, etc.) and/or using adblock DNS (AdGuard, Tiar.app, etc.) and getting the annoying adblock detection overlay, you may have removed the overlay by adding it to the blocklist.
 But, the blur is still on the page because it's embedded into the CSS (not just HTML elements).
 
-This userscript removes IDLIX's kind of adblock detection elements along with its blurring styles from a loaded HTML page.
+This userscript removes IDLIX's adblock detection elements along with its blurring styles from a loaded HTML page. This also applies to other web pages which using the same adblock detection alert.
 It can be installed using Tampermonkey (for Chrome) or Greasemonkey (for Firefox).
 
 ## Features
@@ -12,17 +12,17 @@ Removes alert wrapper, red overlay, and blur filter from the page.
 
 ### From this:
 
-*screenshot coming soon*
+![Before](https://raw.githubusercontent.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/main/Screenshots/BEFORE-remove-idlix-adblock-detection-alert.png "Before")
 
 ### To this:
 
-*screenshot coming soon*
+![After](https://raw.githubusercontent.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/main/Screenshots/AFTER-remove-idlix-adblock-detection-alert.png "After")
 
 ## Installation
 
 ### Step 0: Use Adblock
 
-This step is necessary to be done by yourself before installing this userscript. Otherwise, this script would be useless.
+This step is necessary to be done by yourself before installing this userscript. Otherwise, this userscript would be useless.
 
 ### Step 1: Install the Appropriate Extension
 
@@ -54,10 +54,14 @@ Visit IDLIX or other web page with similar adblock detection alert. The Adblock 
 
 ## Updating the Userscript
 
-The userscript will be automatically updated.
+The userscript will be automatically updated whenever this repo is updated. Make sure your Tampermonkey/Greasemonkey to have the "automatically update scripts" feature turned on.
 
 ## Notes
 
 If you encounter any issues or have questions, feel free to [open an issue](https://github.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/issues) on this repository.
 
 Happy browsing without those annoying elements and styles!
+
+## Credits
+
+Thanks to ChatGPT for helping me build this userscript.
