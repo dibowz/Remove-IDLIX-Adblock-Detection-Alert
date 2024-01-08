@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Remove IDLIX's adblock detection elements and styles from a loaded HTML page
 // @author       Dibowz x ChatGPT
-// @match        *://*/*
+// @match        *://*.idlixofficials.com/*
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/main/remove-idlix-adblock-detection-alert.user.js
 // @updateURL    https://raw.githubusercontent.com/dibowz/Remove-IDLIX-Adblock-Detection-Alert/main/remove-idlix-adblock-detection-alert.user.js
@@ -18,10 +18,10 @@
         const prefix = getDynamicPrefix();
 
         // Task 1: Remove <div class="{prefix}-blackout active">
-        removeElementsByClass(`${prefix}-blackout`);
+        // removeElementsByClass(`${prefix}-blackout`);
 
         // Task 2: Remove <div class="{prefix}-wrapper"> with its content
-        removeElementsByClass(`${prefix}-wrapper`);
+        // removeElementsByClass(`${prefix}-wrapper`);
 
         // Task 3: Remove the specified class from the body element
         removeClassFromBody(`${prefix}-style-compact`);
@@ -43,7 +43,7 @@
     }
 
     function getDynamicPrefix() {
-        const divsWithPrefix = document.querySelectorAll('[class*=ce][class*=blackout]');
+        const divsWithPrefix = document.querySelectorAll('[class*=blackout]');
         if (divsWithPrefix.length > 0) {
             const classNames = divsWithPrefix[0].className.split(' ');
             for (let i = 0; i < classNames.length; i++) {
@@ -59,4 +59,5 @@
     window.addEventListener('load', function() {
         removeElements();
     });
+
 })();
